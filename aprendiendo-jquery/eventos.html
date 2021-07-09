@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo jQuery - eventos</title>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="js/02-eventos.js"></script>
+
+    <style>
+        #caja{
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background: yellow;
+            transition: 300ms all;
+            
+        }
+
+ /*       #caja:hover {
+            background: red;
+            cursor: pointer;
+        }*/
+
+        input{
+            padding: 10px;
+            width: 300px;
+            font-size: 20px;
+        }
+
+        #datos{
+            border: 4px dashed black;
+            padding: 10px;
+            width: 250px;
+            height: 50px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        #sigueme{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            display: block;
+            background: yellow;
+            opacity: 0.5;
+            border: 3px solid black;
+            border-radius: 999px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Apreindo jQuery - Eventos</h1>
+
+    <div id="sigueme"></div>
+
+    <form>
+        <input type="text" id="nombre">
+    </form>
+
+    <div id="datos"></div>
+
+    <br>
+
+
+    <div id="caja">
+        Soy una caja
+    </div>
+
+
+
+</body>
+</html>
