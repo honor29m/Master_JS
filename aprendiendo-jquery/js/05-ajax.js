@@ -6,9 +6,11 @@ $(document).ready(function(){
 
     // Get y Post
 
-    $.get("https://reqres.in/api/users", {page : 3}, function(response){
+    $.get("https://reqres.in/api/users", {page : 2}, function(response){
         response.data.forEach((element,index) => {
             $("#datos").append("<p>"+element.first_name+" "+element.last_name+"</p>");
         });
     });
+
+     
 })
